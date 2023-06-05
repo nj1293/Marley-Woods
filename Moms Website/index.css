@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #0b0b0b;
+}
+
+.house-img {
+    background-image: url("https://a.travel-assets.com/findyours-php/viewfinder/images/res70/483000/483182-anna-ruby-falls.jpg");
+    min-height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-family: Source Sans Pro;
+    font-weight: lighter;
+    font-size: 28px;
+    padding: 0 20px;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
